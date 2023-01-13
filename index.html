@@ -5,15 +5,20 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <link href="./ionicons.css" rel="stylesheet">
+    <title>Gestionale</title>
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
+<body>
+	<div class="columns">
+		<div class="column is-one-quarter is-offset-one-quarter">
+			<button class="button is-large is-fullwidth is-primary">
+				<span class="icon"><i class="ion-reply"></i></span> I am boxed
+			</button>
+		</div>
+		<div class="column is-one-quarter">
+			<button class="button is-large is-fullwidth is-primary">I'm in a box.</button>
+		</div>
+	</div>
     <script src="./renderer.js"></script>
-  </body>
+</body>
 </html>
